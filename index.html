@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Box Breathing App</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="time-limit-selection">
+      <button class="time-btn" data-time="2">2 min</button>
+      <button class="time-btn" data-time="5">5 min</button>
+      <button class="time-btn" data-time="10">10 min</button>
+      <input type="number" id="custom-time" placeholder="Custom (min)" min="1">
+    </div>
+    <button id="start-btn">Start</button>
+    <div id="exercise" style="display: none;">
+      <div id="total-time">0:00</div>
+      <div id="box">
+        <div id="circle"></div>
+      </div>
+      <div id="phase-name"></div>
+      <div id="phase-timer"></div>
+      <button id="stop-btn">Stop</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
