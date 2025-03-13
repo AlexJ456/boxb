@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Fits nicely on iPhone 16 Pro */
+}
+
+#time-limit-selection {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ffcc00; /* Warm color */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ffcc00;
+  margin: 20px auto;
+}
+
+#circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the circle on its path */
+}
+
+#total-time {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  opacity: 0.7; /* Subtle, glanceable */
+}
+
+#phase-name {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#phase-timer {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ffcc00;
+  background-color: #333;
+  color: white;
+}
